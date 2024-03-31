@@ -1,0 +1,7 @@
+This folder contains files associated with the mesh:
+
+channel_sphere.geo - this is a script for Gmsh; it can be opened and edited with a text editor.  Inside this file are the parameters and instructions for creating the mesh
+
+makemesh - a bash script that can be run to create .xml files for the mesh that can be used by FEniCS.  To run the script, run the command "bash makemesh.sh" (without the quotes) in a terminal.  See https://www.geeksforgeeks.org/how-to-run-bash-script-in-linux/ for more details on how to run bash scripts in a terminal
+
+generatemeshes - a bash script that can be run to create .xml files for meshes with radii ranging from 0.1 to 0.9. The script searches and replaces the radius in channel_sphere.geo and generates the corresponding .xml files.
